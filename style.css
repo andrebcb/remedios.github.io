@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #ff3366, #ff9966, #ffcc66, #99ff66, #66ccff, #cc66ff);
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+button {
+    background: linear-gradient(to right, #ff3366, #ff9966, #ffcc66, #99ff66, #66ccff, #cc66ff);
+    color: #000; /* Alterado para preto */
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e6005c, #e68a00, #e6e600, #66cc00, #3385ff, #9933cc);
+    transform: scale(1.05);
+}
+
+#participants, #resultado, #links {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+/* Adicionando animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button, input {
+    animation: pulse 2s infinite;
+}
